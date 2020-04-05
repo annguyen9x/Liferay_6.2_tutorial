@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.annguyen.kyanhbooks">
+	<author>AnNguyen</author>
+	<namespace>kyanhbooks</namespace>
+
+	<entity name="KhachHang" local-service="true" remote-service="true"
+		table="KhachHang">
+
+		<!-- PK fields -->
+		<column name="MaKH" type="int" primary="true" db-name="MaKH" />
+
+		<!-- Other fields -->
+
+		<column name="TenKH" type="String" db-name="TenKH" />
+		<column name="MatKhau" type="String" db-name="MatKhau" />
+		<column name="Email" type="String" db-name="Email" />
+		<column name="DienThoai" type="String" db-name="DienThoai" />
+		<column name="GioiTinh" type="boolean" db-name="GioiTinh" />
+		<column name="NgaySinh" type="Date" db-name="NgaySinh" />
+		<column name="DiaChi " type="String" db-name="DiaChi " />
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="TenKH" />
+		</order>
+
+		<!-- Finder methods -->
+	</entity>
+</service-builder>

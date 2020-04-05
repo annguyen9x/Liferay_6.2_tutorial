@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.annguyen.kyanhbooks.service.KhachHangLocalService" class="com.annguyen.kyanhbooks.service.impl.KhachHangLocalServiceImpl" />
+	<bean id="com.annguyen.kyanhbooks.service.KhachHangService" class="com.annguyen.kyanhbooks.service.impl.KhachHangServiceImpl" />
+	<bean id="com.annguyen.kyanhbooks.service.persistence.KhachHangPersistence" class="com.annguyen.kyanhbooks.service.persistence.KhachHangPersistenceImpl" parent="basePersistence" />
+</beans>

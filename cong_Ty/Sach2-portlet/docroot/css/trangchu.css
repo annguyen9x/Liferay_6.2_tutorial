@@ -1,0 +1,31 @@
+.group_sp, span3{
+	margin-top:10px !important;
+	min-height:400px;
+}
+
+.anh_sp {
+	position: relative;
+	padding: 25px 0px;
+	border-bottom: 1px solid #eaeaea;
+	transform: translate(-7px, 7px);
+}
+
+img {
+	width: 100%;
+}
+
+}
+.tensp_giasp {
+	padding: 10px 12px;
+	height: 54px;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: justify;
+}
+
+.giasp {
+	height: 42px;
+	line-height: 18px;
+	font-size: 14px;
+	font-weight: bold;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.annguyen.kyanhbooks.model.KhachHang">
+		<field name="MaKH" type="int" />
+		<field name="TenKH" type="String" />
+		<field name="MatKhau" type="String" />
+		<field name="Email" type="String" />
+		<field name="DienThoai" type="String" />
+		<field name="GioiTinh" type="boolean" />
+		<field name="NgaySinh" type="Date" />
+		<field name="DiaChi " type="String" />
+	</model>
+</model-hints>

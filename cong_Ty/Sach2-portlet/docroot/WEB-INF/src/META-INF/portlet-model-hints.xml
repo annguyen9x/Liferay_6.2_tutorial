@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.annguyen.kyanhbooks.model.Sach">
+		<field name="MaSach" type="String" />
+		<field name="TenSach" type="String" />
+		<field name="DonGia" type="float" />
+		<field name="SoLuong" type="int" />
+		<field name="UrlHinh" type="String" />
+		<field name="NoiDung" type="String" />
+		<field name="TacGia" type="String" />
+		<field name="NamXB" type="int" />
+		<field name="NXB" type="String" />
+		<field name="MaLoaiSach" type="String" />
+	</model>
+</model-hints>

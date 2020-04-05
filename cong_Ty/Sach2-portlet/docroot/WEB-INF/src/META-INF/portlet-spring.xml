@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.annguyen.kyanhbooks.service.SachLocalService" class="com.annguyen.kyanhbooks.service.impl.SachLocalServiceImpl" />
+	<bean id="com.annguyen.kyanhbooks.service.SachService" class="com.annguyen.kyanhbooks.service.impl.SachServiceImpl" />
+	<bean id="com.annguyen.kyanhbooks.service.persistence.SachPersistence" class="com.annguyen.kyanhbooks.service.persistence.SachPersistenceImpl" parent="basePersistence" />
+</beans>

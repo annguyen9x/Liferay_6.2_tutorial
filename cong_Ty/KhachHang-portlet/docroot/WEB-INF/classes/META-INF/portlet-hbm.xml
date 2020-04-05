@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.annguyen.kyanhbooks.model.KhachHang" />
+	<class name="com.annguyen.kyanhbooks.model.impl.KhachHangImpl" table="KhachHang">
+		<cache usage="read-write" />
+		<id name="MaKH" type="int">
+			<generator class="assigned" />
+		</id>
+		<property name="TenKH" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="MatKhau" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="Email" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="DienThoai" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="GioiTinh" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="NgaySinh" type="org.hibernate.type.TimestampType" />
+		<property name="DiaChi " type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

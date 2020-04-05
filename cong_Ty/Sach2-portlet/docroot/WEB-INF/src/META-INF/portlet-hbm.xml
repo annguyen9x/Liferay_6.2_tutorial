@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.annguyen.kyanhbooks.model.Sach" />
+	<class name="com.annguyen.kyanhbooks.model.impl.SachImpl" table="Sach">
+		<cache usage="read-write" />
+		<id name="MaSach" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="TenSach" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="DonGia" type="com.liferay.portal.dao.orm.hibernate.FloatType" />
+		<property name="SoLuong" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="UrlHinh" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="NoiDung" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="TacGia" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="NamXB" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="NXB" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="MaLoaiSach" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>
